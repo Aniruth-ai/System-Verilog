@@ -4,11 +4,10 @@ class transaction;
   rand bit [3:0] in1;
   rand bit [3:0] in2;
   rand bit [3:0] in3;
-  
-  bit [3:0] mux_output;
-  
   rand bit [1:0] sel_input;
   
+  bit [3:0] mux_output;
+
   function void display(string name);
     
     $display("-------------------------");
@@ -19,9 +18,6 @@ class transaction;
     $display("=======> sel = %0h, MUX_OUTPUT = %0h",sel_input, mux_output);
     $display("-------------------------"); 
 
-  endfunction 
-  
-  //Sample Constraint
-  //constraint in0_constraint {in0 inside{[4'h8: 4'hf]};}
+  endfunction
 
 endclass
