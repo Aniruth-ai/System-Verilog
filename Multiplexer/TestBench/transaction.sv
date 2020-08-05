@@ -19,23 +19,9 @@ class transaction;
     $display("=======> sel = %0h, MUX_OUTPUT = %0h",sel_input, mux_output);
     $display("-------------------------"); 
 
-  endfunction
-  
-  /*//deep copy method
-  function transaction do_copy();
-    transaction trans;
-    trans = new();
-    trans.in0  = this.in0;
-    trans.in1 = this.in1;
-    trans.in2 = this.in2;
-    trans.in3 = this.in3;
-    trans.sel_input = this.sel_input;
-    return trans;
-  endfunction */  
+  endfunction 
   
   //Sample Constraint
   //constraint in0_constraint {in0 inside{[4'h8: 4'hf]};}
-  
-    
-  
+
 endclass
