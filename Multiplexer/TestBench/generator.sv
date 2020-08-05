@@ -21,8 +21,8 @@ class generator;
       trans.display("[ Generator ]");
       gen2driv.put(trans);
     end
-
-   	-> ended;
+    
+    -> ended;
     
   endtask
   
