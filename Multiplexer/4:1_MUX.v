@@ -41,6 +41,5 @@ module 4:1_MUX(clk, in0, in1, in2, in3, sel, out, reset);
     end
     
   end     
-      
-  
+
 endmodule 
