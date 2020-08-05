@@ -42,8 +42,6 @@ class driver;
       @(posedge vif.clk);
       
       trans.mux_output = vif.mux_output;
-
-      @(posedge vif.clk);
       
       trans.display("[Driver]");
       
