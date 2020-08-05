@@ -29,9 +29,7 @@ class monitor;
       trans.in3 = vif.in3;
       trans.sel_input = vif.sel_input;
       
-      trans.mux_output = vif.mux_output;      
-      
-      @(posedge vif.clk);
+      trans.mux_output = vif.mux_output;
       
       mon2chk.put(trans);
       
